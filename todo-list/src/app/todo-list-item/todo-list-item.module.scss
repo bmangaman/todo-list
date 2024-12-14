@@ -1,0 +1,44 @@
+@import "../../shared/styles/variables.scss";
+
+.todo-list {
+  &__item {
+    align-items: center;
+    background-color: #CCCCCC;
+    display: flex;
+    justify-content: space-between;
+    padding: $spacing--sm;
+    width: 100%;
+
+    &--past-due {
+      background-color: #ff9393;
+    }
+
+    &--completed {
+      background-color: #8cd370;
+
+      & > .todo-list__item__description {
+        text-decoration: line-through;
+      }
+    }
+
+    &__description {
+      align-items: center;
+      cursor: pointer;
+      display: flex;
+
+      & > input {
+        cursor: pointer;
+        margin-right: $spacing--sm;
+      }
+    }
+
+    &__due-date {
+      border: 1px solid #000000;
+      padding: $spacing--xs $spacing--sm;
+    }
+
+    & + .todo-list__item {
+      margin-top: $spacing--sm;
+    }
+  }
+}

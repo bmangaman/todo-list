@@ -1,0 +1,14 @@
+@import "../shared/styles/variables.scss";
+
+.page {
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.header {
+  color: #FFFFFF;
+  background-color: #57347a;
+  margin: 0 0 $spacing--md 0;
+  padding: $spacing--md;
+  width: 100%;
+}
